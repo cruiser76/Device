@@ -84,6 +84,12 @@
     margin-bottom: 51px;
     font-size: 18px;
     line-height: 156.8%;
+
+    &::before {
+      background: url("../../img/dash-tablet.svg") no-repeat 50% 50%;
+      left: -15px;
+      top: 17px;
+    }
   }
 
   .promo__btn {
@@ -119,5 +125,10 @@
     padding: 1px 2px 3px 50px;
     font-size: 16px;
     margin-bottom: 37px;
+
+    &::before {
+      left: -14px;
+      top: 15px;
+    }
   }
 }

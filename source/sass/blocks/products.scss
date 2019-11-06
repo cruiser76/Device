@@ -4,7 +4,7 @@
 
 .products__container {
   max-width: 1210px;
-  padding: 0 20px 121px;
+  padding: 0 20px 68px;
   margin: 0 auto;
 }
 
@@ -29,13 +29,28 @@
   position: relative;
   width: 31.6%;
 
+  &--prod {
+    background: url("../../img/pcb-prod-desktop@1x.jpg") no-repeat 50% 0%;
+    background-size: cover;
+  }
+
+  &--montage {
+    background: url("../../img/pcb-montage-desktop@1x.jpg") no-repeat 50% 0%;
+    background-size: cover;
+  }
+
+  &--light {
+    background: url("../../img/light-parts-desktop@1x.jpg") no-repeat 50% 0%;
+    background-size: cover;
+  }
+
   &::after {
     position: absolute;
     content: "";
     background: url("../../img/rect.svg") no-repeat 50% 50%;
     width: 63px;
     height: 63px;
-    bottom: 6px;
+    bottom: 60px;
     right: 0;
     z-index: 1000;
   }
@@ -47,29 +62,124 @@
 
 .products__text {
   @include indent-reset();
-  padding: 50px 161px 0 43px;
+  padding: 50px 161px 569px 43px;
   width: 100%;
-  height: 100%;
-  position: absolute;
+
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  top: 0;
-  left: 0;
   color: white;
   background-color: rgba(27, 45, 55, 0.8);
 }
 
 @media (max-width: $tablet) {
   .products__container {
-    padding: 0 25px 121px;
+    padding: 0 25px 31px;
   }
 
   .products__title {
     font-size: 32px;
     line-height: 140.62%;
     padding: 50px 90px 52px 0;
+  }
+
+  .products__list {
+    display: block;
+  }
+
+  .products__text {
+    padding: 39px 501px 157px 44px;
+  }
+
+  .products__link {
+    display: block;
+    width: auto;
+    margin-bottom: 46px;
+
+    &::after {
+      bottom: 1px;
+      right: 0;
+    }
+
+    &--prod {
+      background: url("../../img/pcb-prod-tablet@1x.jpg") no-repeat 50% 0%;
+      background-size: cover;
+
+      &::after {
+        bottom: 1px;
+        right: 4px;
+      }
+    }
+
+    &--montage {
+      background: url("../../img/pcb-montage-tablet@1x.jpg") no-repeat 50% 0%;
+      background-size: cover;
+    }
+
+    &--light {
+      background: url("../../img/light-parts-tablet@1x.jpg") no-repeat 50% 0%;
+      background-size: cover;
+
+      & .products__text {
+        padding: 49px 508px 147px 44px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .products {
+    min-width: 320px;
+  }
+
+  .products__title {
+    font-size: 28px;
+    line-height: 140.62%;
+    padding: 50px 8px 41px;
+  }
+
+  .products__container {
+    padding: 0 15px 33px;
+    margin: 0 auto;
+  }
+
+  .products__text {
+    padding: 20px 102px 176px 36px;
+  }
+
+
+  .products__link {
+    margin-bottom: 30px;
+
+    &::after {
+      bottom: 1px;
+      right: 0;
+    }
+
+    &--prod {
+      background: url("../../img/pcb-prod-mobile@1x.jpg") no-repeat 50% 0%;
+      background-size: cover;
+
+      &::after {
+        bottom: 1px;
+        right: 4px;
+      }
+    }
+
+    &--montage {
+      background: url("../../img/pcb-montage-mobile@1x.jpg") no-repeat 50% 0%;
+      background-size: cover;
+    }
+
+    &--light {
+      background: url("../../img/light-parts-mobile@1x.jpg") no-repeat 50% 0%;
+      background-size: cover;
+
+      & .products__text {
+        padding: 31px 88px 166px 37px;
+      }
+    }
   }
 }
