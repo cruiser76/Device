@@ -1,0 +1,41 @@
+.btn {
+  padding: 14px 28px 14px 25px;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+
+  &--blue {
+    background-color: $blue;
+    border-color: $blue;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 18px 44px;
+  }
+
+  &--about {
+    background-color: transparent;
+    border-color: $blue;
+    color: $blue;
+    padding: 13px 49px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .btn {
+    cursor: default;
+
+    &--blue {
+      padding: 18px 30px;
+    }
+  }
+}

@@ -1,0 +1,159 @@
+.features {
+  @include indent-reset();
+  margin: 0 auto;
+  max-width: 1210px;
+  padding: 110px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features__item {
+  position: relative;
+  background-color: white;
+  width: 48.7%;
+  min-height: 299px;
+  padding: 42px 43px 49px 41px;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid $blue;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  &--tag {
+    padding-top: 40px;
+  }
+
+  &--detective h2 {
+    margin-bottom: 17px;
+  }
+
+  &:hover {
+    background-color: $blue;
+    color: white;
+  }
+
+  &:hover h2 {
+    color: white;
+  }
+
+  &:hover svg {
+    fill: white;
+  }
+}
+
+.features__img {
+  fill: $blue;
+  margin-bottom: 15px;
+}
+
+.features__title {
+  @include indent-reset();
+  margin-bottom: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: $blue;
+}
+
+.features__text {
+  @include indent-reset();
+  padding: 0 0 15px;
+}
+
+@media (max-width: $tablet) {
+  .features {
+    padding: 55px 25px 0;
+  }
+
+  .features__item {
+    width: 48%;
+    padding: 23px 25px 0 24px;
+    min-height: 232px;
+    border-left-width: 2px;
+
+    &--detective {
+      padding-right: 10px;
+    }
+  }
+
+  .features__img {
+    margin-bottom: 2px;
+
+    &--hired {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .features__title {
+    margin-bottom: 8px;
+  }
+
+  .features__text {
+    padding: 0 0 19px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .features {
+
+    min-width: 320px;
+    display: block;
+    padding: 37px 15px 0;
+  }
+
+  .features__item {
+    width: 100%;
+    min-width: 290px;
+    margin-bottom: 20px;
+
+    &--hired {
+      padding: 23px 12px 0 24px;
+    }
+
+    &--detective {
+      padding: 25px 12px 0 24px;
+    }
+
+    &--tag {
+      padding: 25px 15px 0 24px;
+    }
+
+    &--detective h2 {
+      padding-right: 10px;
+      margin-bottom: -8px;
+    }
+
+    &--tag h2 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .features__title {
+    font-size: 20px;
+    line-height: 140.62%;
+  }
+
+  .features__img {
+    margin-bottom: 7px;
+
+    &--hired {
+      margin-bottom: 10px;
+    }
+
+    &--detective {
+      width: 30px;
+      height: 26px;
+    }
+
+    &--tag {
+      margin-bottom: 3px;
+    }
+  }
+
+  .features__text {
+    padding: 0 0 25px;
+  }
+}

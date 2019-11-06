@@ -1,0 +1,23 @@
+.feedback {
+  background-color: $blue;
+}
+
+.feedback__form {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.feedback__lead {
+  @include indent-reset();
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.feedback__text {
+  color: #ffffff;
+}

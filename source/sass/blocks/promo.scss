@@ -1,0 +1,123 @@
+.promo {
+  position: relative;
+  margin: 0 auto;
+  color: #ffffff;
+  padding-bottom: 274px;
+  padding-top: 204px;
+  padding-left: 20px;
+  max-width: 1465px;
+
+  &::before {
+    position: absolute;
+    content: "Cкролл вниз";
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 16px;
+    transform: rotate(-90deg);
+    top: 81.2%;
+    left: -0.9%;
+  }
+}
+
+.promo__title {
+  @include indent-reset();
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.promo__description {
+  @include indent-reset();
+  position: relative;
+  width: 715px;
+  padding: 27px 0 42px 100px;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+
+  &::before {
+    position: absolute;
+    left: 5px;
+    top: 43px;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: url("../../img/dash-desktop.svg") no-repeat 50% 50%;
+  }
+}
+
+.promo__btn {
+  margin-left: 99px;
+}
+
+.promo__btn-text--small {
+  display: none;
+}
+
+@media (max-width: $tablet) {
+  .promo {
+    margin: 0 auto 0 0;
+    width: 660px;
+    padding: 67px 50px 162px 89px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 27px;
+  }
+
+  .promo__description {
+    width: 100%;
+    padding: 1px 2px 3px 50px;
+    margin-bottom: 51px;
+    font-size: 18px;
+    line-height: 156.8%;
+  }
+
+  .promo__btn {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .promo {
+    width: 100%;
+    min-width: 300px;
+    padding: 205px 10px 69px 15px;
+  }
+
+  .promo__btn {
+    margin-left: 4px;
+  }
+
+  .promo__btn-text--big {
+    display: none;
+  }
+
+  .promo__btn-text--small {
+    display: inline;
+  }
+
+  .promo__title {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .promo__description {
+    padding: 1px 2px 3px 50px;
+    font-size: 16px;
+    margin-bottom: 37px;
+  }
+}

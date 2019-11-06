@@ -1,0 +1,124 @@
+.header {
+  background-color: $main-color;
+  background-image: url("../../img/bg-header-desktop@1x.png"),
+    url("../../img/bg-header-pcb-desktop@1x.png"),
+    url("../../img/bg-dbl-triangle-desktop@1x.png");
+  background-size: cover, auto;
+  background-repeat: no-repeat;
+  background-position: 0 0, 1039px 258px;
+}
+
+.header__contacts {
+  margin: 0 auto 23px;
+  padding: 33px 10px 0;
+  max-width: 1430px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.header__feedback {
+  padding-bottom: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__feedback-item {
+  color: inherit;
+  margin-left: 50px;
+  vertical-align: middle;
+
+  &--tel {
+    margin-left: 86px;
+  }
+
+  &--btn {
+    margin-top: 3px;
+  }
+}
+
+.header__feedback-img {
+  margin-right: 9px;
+  margin-top: 5px;
+
+  &--tel {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--mail {
+    width: 19px;
+    height: 14px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .header__feedback-item span,
+  .header__feedback button {
+    display: none;
+  }
+
+  .header {
+    background-image:
+      url("../../img/bg-header-tablet@1x.png"),
+      url("../../img/bg-header-pcb-tablet@1x.png"),
+      url("../../img/bg-dbl-triangle-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 114px;
+    background-size: 100%, auto, 100%;
+  }
+
+  .header__contacts {
+    margin: 0 auto 27px;
+    width: 100%;
+    padding: 20px 25px;
+  }
+
+  .header__feedback-item {
+    margin: 5px 0 0;
+
+    &--tel {
+      margin-left: 34px;
+    }
+  }
+
+  .header__feedback-img {
+    margin: 0;
+
+    &--tel {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--mail {
+      width: 26px;
+      height: 19px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .header {
+    min-width: 320px;
+    background-image:
+      url("../../img/bg-header-mobile@1x.png"),
+      url("../../img/bg-header-pcb-mobile@1x.png"),
+      url("../../img/bg-dbl-triangle-mobile@1x.png");
+    background-position: 0 0, 100% 93px;
+    background-size: cover, auto, 100%;
+  }
+
+  .header__contacts {
+    margin: 0 auto 24px;
+    padding: 11px 17px 0;
+  }
+
+  .header__feedback-item {
+    margin: 10px 0 0;
+
+    &--tel {
+      margin-left: 22px;
+    }
+  }
+}

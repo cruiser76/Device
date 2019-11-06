@@ -1,0 +1,27 @@
+.main {
+  background-image:
+    url("../../img/bg-bigr-triangle-desktop@1x.png"),
+    url("../../img/bg-smalll-triangle-desktop@1x.png"),
+    url("../../img/bg-smallr-triangle-desktop@1x.png"),
+    url("../../img/bg-bigl-triangle-desktop@1x.png");
+  background-position: 559px 147px, 203px 46px, 1555px 394px, 0 444px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $tablet) {
+  .main {
+    background: none;
+    background-image: url("../../img/bg-big-triangler-tablet.svg");
+    background-position: 100% 89px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    background: none;
+    background-image: url("../../img/bg-big-triangler-mobile.svg");
+    background-position: 100% 651px;
+    background-repeat: no-repeat;
+  }
+}
