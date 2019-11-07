@@ -4,7 +4,7 @@
 
 .products__container {
   max-width: 1210px;
-  padding: 0 20px 68px;
+  padding: 0 20px 128px;
   margin: 0 auto;
 }
 
@@ -30,27 +30,27 @@
   width: 31.6%;
 
   &--prod {
-    background: url("../../img/pcb-prod-desktop@1x.jpg") no-repeat 50% 0%;
+    background: url("../img/pcb-prod-desktop@1x.jpg") no-repeat 50% 0%;
     background-size: cover;
   }
 
   &--montage {
-    background: url("../../img/pcb-montage-desktop@1x.jpg") no-repeat 50% 0%;
+    background: url("../img/pcb-montage-desktop@1x.jpg") no-repeat 50% 0%;
     background-size: cover;
   }
 
   &--light {
-    background: url("../../img/light-parts-desktop@1x.jpg") no-repeat 50% 0%;
+    background: url("../img/light-parts-desktop@1x.jpg") no-repeat 50% 0%;
     background-size: cover;
   }
 
   &::after {
     position: absolute;
     content: "";
-    background: url("../../img/rect.svg") no-repeat 50% 50%;
+    background: url("../img/rect.svg") no-repeat 50% 50%;
     width: 63px;
     height: 63px;
-    bottom: 60px;
+    bottom: 0;
     right: 0;
     z-index: 1000;
   }
@@ -62,7 +62,7 @@
 
 .products__text {
   @include indent-reset();
-  padding: 50px 161px 569px 43px;
+  padding: 50px 161px 509px 43px;
   width: 100%;
 
   font-family: "Roboto Condensed", sans-serif;
@@ -104,7 +104,7 @@
     }
 
     &--prod {
-      background: url("../../img/pcb-prod-tablet@1x.jpg") no-repeat 50% 0%;
+      background: url("../img/pcb-prod-tablet@1x.jpg") no-repeat 50% 0%;
       background-size: cover;
 
       &::after {
@@ -114,12 +114,12 @@
     }
 
     &--montage {
-      background: url("../../img/pcb-montage-tablet@1x.jpg") no-repeat 50% 0%;
+      background: url("../img/pcb-montage-tablet@1x.jpg") no-repeat 50% 0%;
       background-size: cover;
     }
 
     &--light {
-      background: url("../../img/light-parts-tablet@1x.jpg") no-repeat 50% 0%;
+      background: url("../img/light-parts-tablet@1x.jpg") no-repeat 50% 0%;
       background-size: cover;
 
       & .products__text {
@@ -159,7 +159,7 @@
     }
 
     &--prod {
-      background: url("../../img/pcb-prod-mobile@1x.jpg") no-repeat 50% 0%;
+      background: url("../img/pcb-prod-mobile@1x.jpg") no-repeat 50% 0%;
       background-size: cover;
 
       &::after {
@@ -169,12 +169,12 @@
     }
 
     &--montage {
-      background: url("../../img/pcb-montage-mobile@1x.jpg") no-repeat 50% 0%;
+      background: url("../img/pcb-montage-mobile@1x.jpg") no-repeat 50% 0%;
       background-size: cover;
     }
 
     &--light {
-      background: url("../../img/light-parts-mobile@1x.jpg") no-repeat 50% 0%;
+      background: url("../img/light-parts-mobile@1x.jpg") no-repeat 50% 0%;
       background-size: cover;
 
       & .products__text {

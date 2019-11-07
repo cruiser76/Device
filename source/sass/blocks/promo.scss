@@ -49,7 +49,7 @@
     content: "";
     width: 66px;
     height: 2px;
-    background: url("../../img/dash-desktop.svg") no-repeat 50% 50%;
+    background: url("../img/dash-desktop.svg") no-repeat 50% 50%;
   }
 }
 
@@ -86,7 +86,7 @@
     line-height: 156.8%;
 
     &::before {
-      background: url("../../img/dash-tablet.svg") no-repeat 50% 50%;
+      background: url("../img/dash-tablet.svg") no-repeat 50% 50%;
       left: -15px;
       top: 17px;
     }

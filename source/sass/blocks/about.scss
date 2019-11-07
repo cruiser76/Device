@@ -3,7 +3,7 @@
   max-width: 1210px;
   margin: 0 auto 90px;
   padding: 75px 22px 20px 200px;
-  background: url("../../img/bg-year-desktop@1x.png") no-repeat -10px 81px;
+  background: url("../img/bg-year-desktop@1x.png") no-repeat -10px 81px;
 }
 
 .about__title {
@@ -31,9 +31,9 @@
 
 @media (max-width: $tablet) {
   .about {
-    margin: 0 auto 64px;
-    padding: 30px 27px 20px 212px;
-    background: url("../../img/bg-year-tablet@1x.png") no-repeat 0 26px;
+    margin: 0 auto 24px;
+    padding: 30px 27px 60px 212px;
+    background: url("../img/bg-year-tablet@1x.png") no-repeat 0 26px;
   }
 
   .about__title {
