@@ -34,12 +34,12 @@
 }
 
 @media (max-width: $mobile) {
-  .logo {
+  .logo--header {
     width: 38px;
     height: 38px;
-  }
 
-  .logo__text {
-    display: none;
+    & .logo__text {
+      display: none;
+    }
   }
 }

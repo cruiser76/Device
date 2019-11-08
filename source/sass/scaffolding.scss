@@ -81,3 +81,17 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.lock {
+  overflow: hidden;
+}
+
+.shim {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}

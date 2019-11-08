@@ -1,0 +1,137 @@
+.modal {
+  position: absolute;
+  overflow: auto;
+  margin: auto;
+  top: 10vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $blue;
+  width: 490px;
+  height: 605px;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  right: 13px;
+  top: 18px;
+
+  & button {
+    border: none;
+    background-color: transparent;
+
+    & svg {
+      fill: #ffffff;
+    }
+  }
+}
+
+.modal__lead {
+  @include indent-reset();
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+  color: #ffffff;
+  padding: 29px 0 13px 40px;
+}
+
+.modal__text {
+  @include indent-reset();
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 0 50px 30px 40px;
+}
+
+.modal__contacts input {
+  border: none;
+  padding-left: 24px;
+  margin-left: 40px;
+  margin-bottom: 33px;
+  width: 84%;
+  display: block;
+  height: 50px;
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.modal textarea {
+  margin-left: 40px;
+  width: 84%;
+  height: 104px;
+  padding: 12px 25px;
+  margin-bottom: 23px;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: none;
+}
+
+.modal__btn button {
+  padding: 14px 166px;
+  margin-left: 40px;
+  font-family: "Roboto Condensed", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal__processing {
+  padding: 35px 70px 0 88px;
+
+  & label {
+    @include indent-reset();
+    position: relative;
+    display: block;
+    width: 100%;
+    font-family: "PT Mono", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("../img/checkbox.svg") no-repeat 50% 50%;
+      width: 16px;
+      height: 16px;
+      top: 1px;
+      left: -48px;
+    }
+  }
+}
+
+.modal__processing input:checked + label::before {
+  background: url("../img/checkbox-checked.svg") no-repeat 50% 50%;
+}

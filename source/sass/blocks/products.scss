@@ -161,11 +161,6 @@
     &--prod {
       background: url("../img/pcb-prod-mobile@1x.jpg") no-repeat 50% 0%;
       background-size: cover;
-
-      &::after {
-        bottom: 1px;
-        right: 4px;
-      }
     }
 
     &--montage {
