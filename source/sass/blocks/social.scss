@@ -6,6 +6,10 @@
   flex-wrap: wrap;
 }
 
+.social__item:hover svg {
+  fill: #000000;
+}
+
 .social svg {
   fill: #cdcdcd;
 }

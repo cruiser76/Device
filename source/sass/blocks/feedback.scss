@@ -1,8 +1,14 @@
 .feedback {
   background-color: $blue;
+  background-image:
+    url("../img/bg-dbl-triangle-feedback.svg"),
+    url("../img/bg-small-triangle-feedback.svg");
+  background-repeat: no-repeat;
+  background-position: 15% 51%, 100% 201%;
 
   & form {
     width: 100%;
+    background-color: $blue;
     padding-bottom: 30px;
   }
 
@@ -110,7 +116,7 @@
 }
 
 .feedback__btn button {
-  padding: 14px 80px;
+  padding: 14px 28%;
   margin-left: 2px;
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
   font-style: normal;
@@ -125,9 +131,19 @@
   background-color: transparent;
   color: #ffffff;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $blue;
+  }
 }
 
 @media (max-width: $tablet) {
+  .feedback {
+    background: none;
+    background-color: $blue;
+  }
+
   .feedback__container {
     padding: 0;
     background: none;

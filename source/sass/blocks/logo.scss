@@ -1,6 +1,14 @@
 .logo {
   display: flex;
   align-content: flex-start;
+
+  &:hover svg {
+    fill: darken($blue, 10%);
+  }
+
+  &:hover .logo__title {
+    color: darken($blue, 10%);
+  }
 }
 
 .logo__text {

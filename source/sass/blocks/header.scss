@@ -38,6 +38,14 @@
   margin-left: 50px;
   vertical-align: middle;
 
+  &:hover svg {
+    fill: darken($blue, 10%);
+  }
+
+  &:hover {
+    color: darken($blue, 10%);
+  }
+
   &--tel {
     margin-left: 86px;
   }
@@ -50,6 +58,8 @@
 .header__feedback-img {
   margin-right: 9px;
   margin-top: 5px;
+
+  fill: $blue;
 
   &--tel {
     width: 18px;

@@ -22,6 +22,11 @@
     padding: 18px 44px;
   }
 
+  &:hover {
+    background-color: darken($blue, 10%);
+    color: #ffffff;
+  }
+
   &--about {
     background-color: transparent;
     border-color: $blue;
@@ -32,8 +37,6 @@
 
 @media (max-width: $tablet) {
   .btn {
-    cursor: default;
-
     &--blue {
       padding: 18px 30px;
     }

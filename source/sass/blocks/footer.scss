@@ -35,7 +35,7 @@
 .footer__container {
   position: relative;
   max-width: 1440px;
-  padding: 64px 12px 58px;
+  padding: 64px 12px 15px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +73,11 @@
 
 .footer__navigation-item {
   padding-right: 75px;
+
+  &:hover a {
+    color: #000000;
+    font-weight: bold;
+  }
 }
 
 .footer__navigation-item a {
@@ -176,12 +181,22 @@ ul.footer__social {
 
   & a {
     color: $main-color;
+
+    &:hover {
+      color: #000000;
+      font-weight: bold;
+    }
   }
 }
 
 .footer__privacy {
   margin-left: 9%;
   margin-right: auto;
+
+  &:hover {
+    color: #000000;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: $tablet) {
@@ -203,7 +218,7 @@ ul.footer__social {
   }
 
   .footer__container {
-    padding: 31px 10px 58px 12px;
+    padding: 31px 10px 24px 12px;
   }
 
   .footer__contacts {
@@ -277,7 +292,7 @@ ul.footer__social {
 
   .footer__container {
     min-width: 320px;
-    padding: 31px 0 0 0;
+    padding: 31px 0 6px 0;
     flex-direction: column;
   }
 
@@ -319,6 +334,7 @@ ul.footer__social {
     display: block;
     border: none;
     background: none;
+    cursor: pointer;
 
     & svg {
       fill: #c4c4c4;
@@ -329,6 +345,7 @@ ul.footer__social {
     display: block;
     border: none;
     background: none;
+    cursor: pointer;
 
     & svg {
       fill: #c4c4c4;
