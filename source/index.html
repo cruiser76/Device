@@ -238,11 +238,11 @@
           <p class="feedback__lead">Остались вопросы? Задайте их нам!</p>
           <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
           <div class="feedback__contacts">
-            <input type="text" placeholder="Имя" name="username">
-            <input type="text" placeholder="Телефон" name="phone">
+            <input type="text" placeholder="Имя" name="username" required>
+            <input type="text" placeholder="Телефон" name="phone" required>
           </div>
 
-          <textarea name="question" id="" cols="30" rows="10">Ваш вопрос</textarea>
+          <textarea name="question" id="" cols="30" rows="10" required placeholder="Ваш вопрос"></textarea>
 
           <div class="feedback__submit">
             <div class="feedback__btn">
@@ -323,16 +323,16 @@
           <div class="footer__navigation-container">
             <h3 class="footer__navigation-title">Разделы сайта</h3>
             <button type="button" class="footer__navigation-btn footer__navigation-btn--nojs">
-              <svg class="footer__navigation-img" width="16" height="16">
+              <svg class="footer__navigation-img footer__navigation-img--hidden" width="16" height="16">
                 <use xlink:href="#icon-plus"></use>
               </svg>
-              <svg class="footer__navigation-img footer__navigation-img--hidden" width="16" height="16">
+              <svg class="footer__navigation-img" width="16" height="16">
                 <use xlink:href="#icon-minus"></use>
               </svg>
           </button>
           </div>
 
-          <ul class="footer__navigation-list footer__navigation-list--nojs footer__navigation-list--hidden">
+          <ul class="footer__navigation-list footer__navigation-list--nojs">
             <li class="footer__navigation-item"><a href="#">О компании</a></li>
             <li class="footer__navigation-item"><a href="#">Продукты</a></li>
             <li class="footer__navigation-item"><a href="#">Производство печатных плат</a></li>
@@ -347,19 +347,19 @@
           <div class="footer__address-container">
             <h3 class="footer__address-title">Наш офис</h3>
             <button type="button" class="footer__address-btn footer__address-btn--nojs">
-              <svg class="footer__address-img" width="16" height="16">
+              <svg class="footer__address-img footer__address-img--hidden" width="16" height="16">
                 <use xlink:href="#icon-plus"></use>
               </svg>
-              <svg class="footer__address-img footer__address-img--hidden" width="16" height="16">
+              <svg class="footer__address-img" width="16" height="16">
                 <use xlink:href="#icon-minus"></use>
               </svg>
             </button>
           </div>
 
-          <p class="footer__address-item footer__address-item--nojs footer__address-item--hidden">г. Мытищи, Олимпийский проспект, д.10</p>
-          <a class="footer__address-item footer__address-item--nojs footer__address-item--hidden" href="tel:+74955894050">+7 (495) 589-40-50</a>
-          <a class="footer__address-item footer__address-item--nojs footer__address-item--hidden" href="tel:+79250038767">+7 (925) 003-87-67</a>
-          <a class="footer__address-item footer__address-item--nojs footer__address-item--hidden" href="tel:+792692608079">+7 (926) 926-080-79</a>
+          <p class="footer__address-item footer__address-item--nojs">г. Мытищи, Олимпийский проспект, д.10</p>
+          <a class="footer__address-item footer__address-item--nojs" href="tel:+74955894050">+7 (495) 589-40-50</a>
+          <a class="footer__address-item footer__address-item--nojs" href="tel:+79250038767">+7 (925) 003-87-67</a>
+          <a class="footer__address-item footer__address-item--nojs" href="tel:+792692608079">+7 (926) 926-080-79</a>
         </div>
         <div class="footer__copyright">
           <p class="footer__copyright-text">Все права защищены</p>
@@ -385,11 +385,11 @@
       <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
       <div class="modal__contacts">
-        <input type="text" placeholder="Имя" name="modal-username">
-        <input type="text" placeholder="Телефон" name="modal-phone">
+        <input type="text" placeholder="Имя" name="modal-username" required>
+        <input type="text" placeholder="Телефон" name="modal-phone" required>
       </div>
 
-      <textarea name="modal-question" id="" cols="30" rows="10">Ваш вопрос</textarea>
+      <textarea name="modal-question" id="" cols="30" rows="10" placeholder="Ваш вопрос" required></textarea>
 
       <div class="modal__btn">
         <button type="submit">отправить</button>
