@@ -168,6 +168,14 @@ textarea {
   margin: 0; /* 2 */
 }
 
+// убираем скругления в сафари
+input,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.

@@ -137,6 +137,7 @@ ul.footer__social {
 
 .footer__copyright-text {
   @include indent-reset();
+  white-space: nowrap;
   font-family: "PT Mono", sans-serif;
   font-style: normal;
   font-weight: normal;

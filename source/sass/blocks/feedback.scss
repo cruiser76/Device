@@ -7,16 +7,15 @@
   background-position: 15% 51%, 100% 201%;
 
   & form {
-    width: 100%;
-    background-color: $blue;
-    padding-bottom: 30px;
+    width: 570px;
+    margin-right: 5px;
   }
 
   & textarea {
+    display: block;
     width: 100%;
     height: 158px;
     padding: 16px 20px;
-    margin-bottom: 36px;
     resize: none;
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
@@ -28,10 +27,17 @@
   }
 }
 
+.feedback__textarea {
+  @include indent-reset();
+  background-color: $blue;
+}
+
 .feedback__container {
+  display: flex;
+  justify-content: flex-end;
   margin: 0 auto;
   max-width: 1230px;
-  padding: 91px 30px 83px 626px;
+  padding: 91px 30px 113px 0;
   background: url("../img/paper-airplane-desktop@1x.png") no-repeat 1% 42%;
 }
 
@@ -54,15 +60,20 @@
 }
 
 .feedback__contacts {
+
   display: flex;
   justify-content: space-between;
   margin: 0 0 38px;
-  padding-left: 4px;
+}
+
+.feedback__contacts div {
+  background-color: $blue;
+  width: 47%;
 }
 
 .feedback__contacts input {
+  width: 100%;
   border: none;
-  width: 47%;
   height: 50px;
   font-family: "PT Mono", sans-serif;
   font-style: normal;
@@ -70,7 +81,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  padding-left: 17px;
+  padding-left: 19px;
   background-color: rgba(255, 255, 255, 0.1);
 
   &::placeholder {
@@ -80,6 +91,7 @@
 
 .feedback__submit {
   display: flex;
+  padding-top: 42px;
 }
 
 .feedback__btn {
@@ -89,6 +101,12 @@
 .feedback__processing {
   width: 50%;
   padding: 8px 0 0 57px;
+  position: relative;
+
+  & input {
+    left: 34px;
+    top: 21px;
+  }
 
   & label {
     @include indent-reset();
@@ -102,6 +120,14 @@
     line-height: 16px;
     color: #ffffff;
     cursor: pointer;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+
+      &::before {
+        background: url("../img/checkbox-hover.svg") no-repeat 50% 50%;
+      }
+    }
 
     &::before {
       position: absolute;
@@ -117,6 +143,10 @@
 
 .feedback__processing input:checked + label::before {
   background: url("../img/checkbox-checked.svg") no-repeat 50% 50%;
+}
+
+.feedback__processing input:checked + label:hover::before {
+  background: url("../img/checkbox-checked-hover.svg") no-repeat 50% 50%;
 }
 
 .feedback__btn button {
@@ -206,9 +236,13 @@
     padding: 30px 16px 42px;
   }
 
-  .feedback__contacts input {
-    display: block;
+  .feedback__contacts div {
     width: 100%;
+  }
+
+  .feedback__contacts input {
+    width: 100%;
+    display: block;
     margin-bottom: 31px;
   }
 
@@ -246,5 +280,10 @@
   .feedback__processing {
     width: 100%;
     padding: 0 0 0 32px;
+
+    & input {
+      left: 8px;
+      top: 11px;
+    }
   }
 }

@@ -20,9 +20,15 @@
   right: 13px;
   top: 18px;
 
+
   & button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
+
+    &:hover svg {
+      fill: rgba(255, 255, 255, 0.6);
+    }
 
     & svg {
       fill: #ffffff;
@@ -106,10 +112,21 @@
   background-color: transparent;
   color: #ffffff;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $blue;
+  }
 }
 
 .modal__processing {
   padding: 35px 70px 0 88px;
+  position: relative;
+
+  & input {
+    left: 49px;
+    top: 45px;
+  }
 
   & label {
     @include indent-reset();
@@ -123,6 +140,14 @@
     line-height: 16px;
     color: #ffffff;
     cursor: pointer;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+
+      &::before {
+        background: url("../img/checkbox-hover.svg") no-repeat 50% 50%;
+      }
+    }
 
     &::before {
       position: absolute;
@@ -138,4 +163,8 @@
 
 .modal__processing input:checked + label::before {
   background: url("../img/checkbox-checked.svg") no-repeat 50% 50%;
+}
+
+.modal__processing input:checked + label:hover::before {
+  background: url("../img/checkbox-checked-hover.svg") no-repeat 50% 50%;
 }

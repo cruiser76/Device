@@ -1,8 +1,6 @@
 'use strict';
-
 (function () {
   var ESC_KEYCODE = 27;
-
   var feedbackBtn = document.querySelector('.header__feedback-item--btn');
   var modalForm = document.querySelector('.modal');
   var closeBtn = document.querySelector('.modal__close button');
@@ -55,6 +53,7 @@
     var userName = modalForm.querySelector('[name=modal-username]');
     var tel = modalForm.querySelector('[name=modal-phone]');
     var question = modalForm.querySelector('[name=modal-question]');
+
     feedbackBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
       modalForm.classList.remove('modal--hidden');
@@ -69,7 +68,6 @@
         question.value = storage.question;
       }
       userName.focus();
-
     });
 
     modalForm.addEventListener('submit', function (evt) {
@@ -116,4 +114,5 @@
       navList.classList.toggle('footer__navigation-list--hidden');
     });
   }
+
 })();
