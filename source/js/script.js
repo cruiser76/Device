@@ -10,6 +10,7 @@
   var navList = document.querySelector('.footer__navigation-list');
   var body = document.querySelector('body');
   var overlay = document.querySelector('.overlay');
+  var feedbackTel = document.querySelector('.feedback__contacts [name=phone]');
 
   var isStorageSupport = true;
   var storage = {};
@@ -49,11 +50,21 @@
     closeModal();
   };
 
+
+  if (feedbackTel) {
+    new IMask(feedbackTel, {
+      mask: '+{0}(000)000-00-00',
+    });
+  }
+
   if (feedbackBtn && modalForm) {
     var userName = modalForm.querySelector('[name=modal-username]');
     var tel = modalForm.querySelector('[name=modal-phone]');
     var question = modalForm.querySelector('[name=modal-question]');
 
+    new IMask(tel, {
+      mask: '+{0}(000)000-00-00',
+    });
     feedbackBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
       modalForm.classList.remove('modal--hidden');
@@ -113,6 +124,36 @@
       }
       navList.classList.toggle('footer__navigation-list--hidden');
     });
+  }
+
+  // плавный якорь
+  // выбираем все ссылки к якорю на странице
+  var linkNav = document.querySelectorAll('[href^="#"]');
+
+  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+  var V = 0.5;
+  for (var p = 0; p < linkNav.length; p++) {
+    linkNav[p].addEventListener('click', function (evt) { // по клику на ссылку
+      evt.preventDefault();// отменяем стандартное поведение
+      var w = window.pageYOffset;// производим прокрутка
+      var hash = this.href.replace(/[^#]*(.*)/, '$1');// к id элемента, к которому нужно перейти
+      var t = document.querySelector(hash).getBoundingClientRect().top; // отступ от окна браузера до id
+      var start = null;
+      requestAnimationFrame(step);// подробнее про функцию анимации [developer.mozilla.org]
+      function step(time) {
+        if (start === null) {
+          start = time;
+        }
+        var progress = time - start;
+        var r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+        window.scrollTo(0, r);
+        if (r !== w + t) {
+          requestAnimationFrame(step);
+        } else {
+          location.hash = hash; // URL с хэшем
+        }
+      }
+    }, false);
   }
 
 })();

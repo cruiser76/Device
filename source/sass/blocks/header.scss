@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: $main-color;
   background-image:
     url("../img/bg-header-desktop@1x.png"),
@@ -6,14 +7,21 @@
     url("../img/bg-dbl-triangle-desktop@1x.png");
   background-size: cover, auto;
   background-repeat: no-repeat;
-  background-position: 0 0, 1039px 258px;
+  background-position: 0 0, 85.4% 258px, 85.4% 0;
+}
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image:
-      url("../img/bg-header-desktop@2x.png"),
-      url("../img/bg-header-pcb-desktop@2x.png"),
-      url("../img/bg-dbl-triangle-desktop@1x.png");
-    background-size: cover, 705px 515px, auto;
+.header__scroll {
+  position: absolute;
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 16px;
+  transform: rotate(-90deg);
+  top: 83.7%;
+  left: 11.2%;
+
+  &:hover {
+    color: rgba(98, 105, 98, 0.9);
   }
 }
 
@@ -52,6 +60,7 @@
 
   &--btn {
     margin-top: 3px;
+    width: 181px;
   }
 }
 
@@ -78,22 +87,18 @@
     display: none;
   }
 
+  .header__scroll {
+    display: none;
+  }
+
   .header {
     background-image:
       url("../img/bg-header-tablet@1x.png"),
       url("../img/bg-header-pcb-tablet@1x.png"),
       url("../img/bg-dbl-triangle-tablet.svg");
     background-repeat: no-repeat;
-    background-position: 0 0, 100% 114px;
-    background-size: 100%, auto, 100%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image:
-        url("../img/bg-header-tablet@2x.png"),
-        url("../img/bg-header-pcb-tablet@2x.png"),
-        url("../img/bg-dbl-triangle-tablet.svg");
-      background-size: 100%, 260px 340px, 100%;
-    }
+    background-position: 0 0, 100% 114px, 100% 0;
+    background-size: cover, auto, auto;
   }
 
   .header__contacts {
@@ -132,8 +137,8 @@
       url("../img/bg-header-mobile@1x.png"),
       url("../img/bg-header-pcb-mobile@1x.png"),
       url("../img/bg-dbl-triangle-mobile@1x.png");
-    background-position: 0 0, 100% 93px;
-    background-size: cover, auto, 100%;
+    background-position: 0 0, 100% 93px, 100% 0;
+    background-size: cover, auto, auto;
   }
 
   .header__contacts {

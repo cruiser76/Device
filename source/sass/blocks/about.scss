@@ -23,6 +23,7 @@
 
 .about__btn {
   margin-top: 21px;
+  width: 181px;
 }
 
 .about__tablet {
@@ -32,7 +33,7 @@
 @media (max-width: $tablet) {
   .about {
     margin: 0 auto 24px;
-    padding: 30px 27px 60px 212px;
+    padding: 29px 27px 60px 212px;
     background: url("../img/bg-year-tablet@1x.png") no-repeat 0 26px;
   }
 

@@ -2,31 +2,23 @@
   @include indent-reset();
   margin: 0 auto;
   max-width: 1210px;
-  padding: 110px 20px 0;
+  padding: 110px 4px 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .features__item {
   position: relative;
-
+  margin-left: auto;
+  margin-right: 15px;
   background-color: white;
-  width: 48.7%;
+  width: 47.4%;
   min-height: 299px;
-  padding: 42px 43px 49px 41px;
+  padding: 96px 43px 51px 41px;
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
   margin-bottom: 30px;
   cursor: pointer;
-
-  &--tag {
-    padding-top: 40px;
-  }
-
-  &--detective h3 {
-    margin-bottom: 17px;
-  }
 
   &:hover {
     background-color: $blue;
@@ -43,8 +35,15 @@
 }
 
 .features__img {
+  position: absolute;
+  left: 42px;
+  top: 41px;
   fill: $blue;
-  margin-bottom: 15px;
+
+  &--detective {
+    left: 42px;
+    top: 43px;
+  }
 }
 
 .features__title {
@@ -65,24 +64,42 @@
 
 @media (max-width: $tablet) {
   .features {
-    padding: 55px 25px 0;
+    padding: 55px 9px 0;
   }
 
   .features__item {
-    width: 48%;
-    padding: 23px 25px 0 24px;
+    width: 45.9%;
+    padding: 65px 25px 0 25px;
     min-height: 232px;
     border-left-width: 2px;
 
     &--detective {
-      padding-right: 10px;
+      padding: 65px 17px 0 25px;
+
+      & h3 {
+        margin-bottom: 12px;
+      }
     }
   }
 
   .features__img {
-    margin-bottom: 2px;
+
+    top: 23px;
+    left: 26px;
 
     &--hired {
+      width: 32px;
+      height: 32px;
+    }
+
+    &--detective {
+      width: 31px;
+      height: 26px;
+      top: 27px;
+      left: 26px;
+    }
+
+    &--tag {
       width: 32px;
       height: 32px;
     }
@@ -109,17 +126,18 @@
     width: 100%;
     min-width: 290px;
     margin-bottom: 20px;
+    padding: 71px 25px 0;
 
     &--hired {
-      padding: 23px 12px 0 24px;
+      padding: 72px 12px 0 24px;
     }
 
     &--detective {
-      padding: 25px 17px 0 24px;
+      padding: 63px 17px 0 24px;
     }
 
     &--tag {
-      padding: 25px 15px 0 24px;
+      padding: 67px 15px 0 24px;
     }
 
     &--detective h3 {

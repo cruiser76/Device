@@ -1,10 +1,11 @@
 .feedback {
   background-color: $blue;
   background-image:
+    url("../img/paper-airplane-desktop@1x.png"),
     url("../img/bg-dbl-triangle-feedback.svg"),
     url("../img/bg-small-triangle-feedback.svg");
   background-repeat: no-repeat;
-  background-position: 15% 51%, 100% 201%;
+  background-position: 24.9% 42%, 15% 51%, 100% 201%;
 
   & form {
     width: 570px;
@@ -38,7 +39,6 @@
   margin: 0 auto;
   max-width: 1230px;
   padding: 91px 30px 113px 0;
-  background: url("../img/paper-airplane-desktop@1x.png") no-repeat 1% 42%;
 }
 
 .feedback__lead {
@@ -195,7 +195,6 @@
 
   .feedback textarea {
     height: 163px;
-    margin-bottom: 39px;
   }
 
   .feedback form {
@@ -211,6 +210,10 @@
   .feedback__contacts input {
     width: 277px;
     height: 52px;
+  }
+
+  .feedback__submit {
+    padding-top: 45px;
   }
 
   .feedback__btn button {
@@ -260,11 +263,11 @@
   .feedback textarea {
     padding: 15px;
     height: 106px;
-    margin-bottom: 23px;
   }
 
   .feedback__submit {
     display: block;
+    padding-top: 30px;
   }
 
   .feedback__btn {
