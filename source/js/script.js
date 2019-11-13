@@ -50,7 +50,6 @@
     closeModal();
   };
 
-
   if (feedbackTel) {
     IMask(feedbackTel, {
       mask: '+{0}(000)000-00-00',

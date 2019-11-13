@@ -1,11 +1,8 @@
 .feedback {
   background-color: $blue;
-  background-image:
-    url("../img/paper-airplane-desktop@1x.png"),
-    url("../img/bg-dbl-triangle-feedback.svg"),
-    url("../img/bg-small-triangle-feedback.svg");
+  background-image: url("../img/bg-small-triangle-feedback.svg");
   background-repeat: no-repeat;
-  background-position: top 41.9% right 1059px, top 50.9% right 1113px, 100% 201%;
+  background-position: 100% 201%;
 
   & form {
     width: 570px;
@@ -33,11 +30,15 @@
 }
 
 .feedback__container {
+  background-image:
+    url("../img/paper-airplane-desktop@1x.png"),
+    url("../img/bg-dbl-triangle-feedback.svg");
+  background-repeat: no-repeat;
+  background-position: right 701px top 41.9%, right 754px top 50.9%;
+  max-width: 1561px;
   display: flex;
   justify-content: flex-end;
-  margin: 0 auto;
-  max-width: 1920px;
-  padding: 91px 19.7% 113px 0;
+  padding: 91px 20px 113px 0;
 }
 
 .feedback__lead {
@@ -207,8 +208,12 @@
     margin: 0 0 39px;
   }
 
+  .feedback__contacts div {
+    width: 279px;
+  }
+
   .feedback__contacts input {
-    width: 277px;
+    width: 100%;
     height: 52px;
   }
 

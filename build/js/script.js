@@ -50,7 +50,6 @@
     closeModal();
   };
 
-
   if (feedbackTel) {
     IMask(feedbackTel, {
       mask: '+{0}(000)000-00-00',
@@ -76,7 +75,7 @@
       if (isStorageSupport) {
         userName.value = storage.userName;
         tel.value = storage.tel;
-        question.value = storage.question;
+        question.value = storage.question ? storage.question : "";
       }
       userName.focus();
     });
