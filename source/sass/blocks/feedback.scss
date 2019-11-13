@@ -5,11 +5,10 @@
     url("../img/bg-dbl-triangle-feedback.svg"),
     url("../img/bg-small-triangle-feedback.svg");
   background-repeat: no-repeat;
-  background-position: 24.9% 42%, 15% 51%, 100% 201%;
+  background-position: top 41.9% right 1059px, top 50.9% right 1113px, 100% 201%;
 
   & form {
     width: 570px;
-    margin-right: 3px;
   }
 
   & textarea {
@@ -37,8 +36,8 @@
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
-  max-width: 1230px;
-  padding: 91px 30px 113px 0;
+  max-width: 1920px;
+  padding: 91px 19.7% 113px 0;
 }
 
 .feedback__lead {
