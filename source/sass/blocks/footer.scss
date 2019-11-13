@@ -63,16 +63,13 @@
 
 .footer__navigation-list {
   @include list-reset();
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 0;
-  align-items: flex-start;
-  align-content: flex-start;
+  width: 94%;
+  column-count: 2;
 }
 
 .footer__navigation-item {
+  width: 100%;
   display: block;
-  padding-right: 75px;
   font-family: "PT Mono", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -197,7 +194,7 @@ ul.footer__social {
 @media (max-width: $tablet) {
   .footer {
     &::after {
-      top: 387px;
+      bottom: 70px;
       left: 0;
     }
 
@@ -244,11 +241,13 @@ ul.footer__social {
   }
 
   .footer__navigation {
+
     padding-top: 71px;
     padding-left: 14px;
   }
 
   .footer__navigation-list {
+    column-count: 1;
     display: block;
     height: auto;
   }
