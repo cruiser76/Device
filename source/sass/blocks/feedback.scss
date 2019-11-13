@@ -9,7 +9,7 @@
 
   & form {
     width: 570px;
-    margin-right: 5px;
+    margin-right: 3px;
   }
 
   & textarea {
@@ -68,7 +68,7 @@
 
 .feedback__contacts div {
   background-color: $blue;
-  width: 47%;
+  width: 269px;
 }
 
 .feedback__contacts input {
@@ -179,6 +179,7 @@
   }
 
   .feedback__container {
+    display: block;
     padding: 0;
     background: none;
   }
@@ -198,7 +199,7 @@
   }
 
   .feedback form {
-    width: 592px;
+    width: 593px;
     margin: 0 auto;
     padding: 81px 0 103px;
   }
