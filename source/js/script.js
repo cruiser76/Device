@@ -52,7 +52,7 @@
 
 
   if (feedbackTel) {
-    new IMask(feedbackTel, {
+    IMask(feedbackTel, {
       mask: '+{0}(000)000-00-00',
     });
   }
@@ -62,7 +62,7 @@
     var tel = modalForm.querySelector('[name=modal-phone]');
     var question = modalForm.querySelector('[name=modal-question]');
 
-    new IMask(tel, {
+    IMask(tel, {
       mask: '+{0}(000)000-00-00',
     });
     feedbackBtn.addEventListener('click', function (evt) {
@@ -76,7 +76,7 @@
       if (isStorageSupport) {
         userName.value = storage.userName;
         tel.value = storage.tel;
-        question.value = storage.question;
+        question.value = storage.question ? storage.question : "";
       }
       userName.focus();
     });
@@ -128,7 +128,7 @@
 
   // плавный якорь
   // выбираем все ссылки к якорю на странице
-  var linkNav = document.querySelectorAll('[href^="#"]');
+  var linkNav = document.querySelectorAll('[href^="#anchor-"]');
 
   // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
   var V = 0.5;
@@ -136,7 +136,7 @@
     linkNav[p].addEventListener('click', function (evt) { // по клику на ссылку
       evt.preventDefault();// отменяем стандартное поведение
       var w = window.pageYOffset;// производим прокрутка
-      var hash = this.href.replace(/[^#]*(.*)/, '$1');// к id элемента, к которому нужно перейти
+      var hash = evt.currentTarget.href.replace(/[^#]*(.*)/, '$1');// к id элемента, к которому нужно перейти
       var t = document.querySelector(hash).getBoundingClientRect().top; // отступ от окна браузера до id
       var start = null;
       requestAnimationFrame(step);// подробнее про функцию анимации [developer.mozilla.org]

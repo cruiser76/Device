@@ -2,12 +2,12 @@
   position: relative;
   background-color: $main-color;
   background-image:
-    url("../img/bg-header-desktop@1x.png"),
     url("../img/bg-header-pcb-desktop@1x.png"),
-    url("../img/bg-dbl-triangle-desktop@1x.png");
-  background-size: cover, auto;
+    url("../img/bg-dbl-triangle-desktop@1x.png"),
+    url("../img/bg-header-desktop@1x.png");
+  background-size: auto, auto, cover;
   background-repeat: no-repeat;
-  background-position: 0 0, 85.4% 258px, 85.4% 0;
+  background-position: 85.4% 258px, 85.4% 0, 0 0;
 }
 
 .header__scroll {
