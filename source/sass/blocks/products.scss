@@ -3,8 +3,8 @@
 }
 
 .products__container {
-  max-width: 1210px;
-  padding: 0 20px 98px;
+  max-width: 1230px;
+  padding: 0 20px 98px 0;
   margin: 0 auto;
 }
 
@@ -15,20 +15,21 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
-  padding: 88px 0 52px;
+  padding: 88px 0 52px 30px;
   color: white;
 }
 
 .products__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  flex-shrink: 1;
 }
 
 .products__link {
+  flex-shrink: 1;
   position: relative;
-  width: 31.6%;
+  width: 30.6%;
+  margin-left: 2.5%;
   margin-bottom: 30px;
 
   &--prod {
