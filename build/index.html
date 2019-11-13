@@ -108,16 +108,16 @@
     <div class="promo">
       <h1 class="promo__title">Печатные платы</h1>
       <p class="promo__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a href="#feedback" title="Бесплатная консультация" class="promo__btn btn btn--blue">
+      <a href="#anchor-feedback" title="Бесплатная консультация" class="promo__btn btn btn--blue">
         <span class="promo__btn-text promo__btn-text--big">Получить бесплатную консультацию</span>
         <span class="promo__btn-text promo__btn-text--small">Бесплатная консультация</span>
       </a>
     </div>
-    <a class="header__scroll" title="Скролл вниз" href="#features">Скролл вниз</a>
+    <a class="header__scroll" title="Скролл вниз" href="#anchor-features">Скролл вниз</a>
   </header>
 
   <main class="main">
-    <section class="features" id="features">
+    <section class="features" id="anchor-features">
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="features__item features__item--time">
         <svg class="features__img" width="29" height="35">
@@ -188,7 +188,7 @@
         </div>
       </div>
     </section>
-    <section class="feedback" id="feedback">
+    <section class="feedback" id="anchor-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <div class="feedback__container">
         <form method="POST" action="https://echo.htmlacademy.ru">
@@ -276,16 +276,20 @@
             <h3 class="footer__navigation-title">Разделы сайта</h3>
             <button type="button" class="footer__navigation-btn footer__navigation-btn--nojs">
               <span class="visually-hidden">Разделы</span>
-              <svg class="footer__navigation-img footer__navigation-img--hidden" width="16" height="16">
-                <use xlink:href="#icon-plus"></use>
-              </svg>
-              <svg class="footer__navigation-img" width="16" height="16">
-                <use xlink:href="#icon-minus"></use>
-              </svg>
+              <div class="footer__navigation-img">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-plus"></use>
+                </svg>
+              </div>
+              <div class="footer__navigation-img  footer__navigation-img--hidden">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-minus"></use>
+                </svg>
+              </div>
           </button>
           </div>
 
-          <div class="footer__navigation-list footer__navigation-list--nojs">
+          <div class="footer__navigation-list footer__navigation-list--hidden footer__navigation-list--nojs">
             <div>
               <a class="footer__navigation-item" href="#">О компании</a>
               <a class="footer__navigation-item" href="#">Продукты</a>
@@ -306,12 +310,16 @@
             <h3 class="footer__address-title">Наш офис</h3>
             <button type="button" class="footer__address-btn footer__address-btn--nojs">
               <span class="visually-hidden">Контакты</span>
-              <svg class="footer__address-img footer__address-img--hidden" width="16" height="16">
-                <use xlink:href="#icon-plus"></use>
-              </svg>
-              <svg class="footer__address-img" width="16" height="16">
-                <use xlink:href="#icon-minus"></use>
-              </svg>
+              <div class="footer__address-img footer__address-img--hidden">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-plus"></use>
+                </svg>
+              </div>
+              <div class="footer__address-img">
+                <svg width="16" height="16">
+                  <use xlink:href="#icon-minus"></use>
+                </svg>
+              </div>
             </button>
           </div>
 
